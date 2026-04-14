@@ -1032,20 +1032,22 @@ header.scrolled {
 
 .skill-item i {
     color: var(--accent-primary);
-    font-size: 1.4rem;
-    width: 35px; /* आइकन के लिए फिक्स्ड स्पेस */
-    flex-shrink: 0; /* आइकन दबना नहीं चाहिए */
+    font-size: 1.6rem; /* 1.4rem से बढ़ाकर 1.6rem करें */
+    width: 40px;      /* थोड़ी ज्यादा जगह दें */
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3); /* हल्का सा ग्लो इफ़ेक्ट */
+    flex-shrink: 0;
 }
 
 .skill-item span {
-    flex: 1; /* बची हुई जगह का हिस्सा ले */
-    font-weight: 500;
+    flex: 1.1; /* बची हुई जगह का हिस्सा ले */
+    font-weight: 600;
     color: var(--text-primary);
     text-align: left;
+    letter-spacing: 0.5px;
 }
 
 .skill-bar {
-    height: 6px; /* थोड़ा पतला बार ज़्यादा मॉडर्न दिखता है */
+    height: 8px; /* थोड़ा पतला बार ज़्यादा मॉडर्न दिखता है */
     background: rgba(255, 255, 255, 0.1); /* हल्का बैकग्राउंड */
     border-radius: 10px;
     overflow: hidden;
