@@ -1046,7 +1046,7 @@ header.scrolled {
     background: var(--glass-bg);
     border-radius: 4px;
     overflow: hidden;
-    flex: 2;
+    flex: 1.2;
 }
 
 .skill-fill {
