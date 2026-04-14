@@ -1025,34 +1025,38 @@ header.scrolled {
 .skill-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between; /* यह टेक्स्ट और बार को किनारों पर धकेलेगा */
+    gap: 1.5rem;
+    width: 100%; /* पूरी चौड़ाई सुनिश्चित करें */
 }
 
 .skill-item i {
     color: var(--accent-primary);
-    font-size: 1.5rem;
-    width: 30px;
-    text-align: center;
+    font-size: 1.4rem;
+    width: 35px; /* आइकन के लिए फिक्स्ड स्पेस */
+    flex-shrink: 0; /* आइकन दबना नहीं चाहिए */
 }
 
 .skill-item span {
-    flex: 1;
-    font-weight: 600;
+    flex: 1; /* बची हुई जगह का हिस्सा ले */
+    font-weight: 500;
     color: var(--text-primary);
+    text-align: left;
 }
 
 .skill-bar {
-    height: 8px;
-    background: var(--glass-bg);
-    border-radius: 4px;
+    height: 6px; /* थोड़ा पतला बार ज़्यादा मॉडर्न दिखता है */
+    background: rgba(255, 255, 255, 0.1); /* हल्का बैकग्राउंड */
+    border-radius: 10px;
     overflow: hidden;
-    flex: 1.2;
+    width: 100px; /* बार की लंबाई को फिक्स करें ताकि सब एक जैसे दिखें */
+    flex-shrink: 0;
 }
 
 .skill-fill {
     height: 100%;
     background: var(--accent-gradient);
-    border-radius: 4px;
+    border-radius: 10px;
     transition: width 1s ease;
 }
 
